@@ -1,0 +1,118 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "yJTc-GCV-F5Sfof_9ypeF2MiNuk",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "xblkAY1CGHJxrSwP59PpCUAKDSg",
+            "id": "cXCBiF67jLM",
+            "snippet": {
+                "publishedAt": "2023-01-13T05:00:07Z",
+                "channelId": "UCg8ZzloDPTrOiGztK0C9txQ",
+                "title": "TAEYANG - 'VIBE (feat. Jimin of BTS)' M/V",
+                "description": "https://taeyang.lnk.to/VIBE\n\nTAEYANG - 'VIBE (feat. Jimin of BTS)' M/V\n\n말론 표현할 수 없지만\nGirl, You gotta know you got that vibe\n네 미소는 Fine Art\n내 영혼을 깨워\nYou got me feelin’ so right yeah \nIt’s a vibe \n\nYeah eh\nThis gon’ be the one and only theme song\n너에게만 고정된 내 시선\n내겐 너란 하나뿐인 Mission\n불가능은 없어 Baby lights camera action\n나란 음악 위에 너는 Topline \n너란 도시 위에 나는 Skyline \n넌 내 영화 속에 Highlight \n어두운 밤하늘 끝에 Twilight\nJust gets better\n너를 처음부터 정주행하고 싶은 매력 \nYou don’t know I want your love (know I want your love)\n이 밤이 끝나기 전에 Baby\n\nYou know we got that vibe baby (해 뜰 때까지)\nLook at me, look at me, 느낌이 나지\nLook at me, look at me, 느낌이 나지\nYou know we got that vibe baby (해 질 때까지)\nLook at you, look at you, 느낌이 나지 \n느낌이 와 It’s a vibe\n\nThis gon’ be the one and only Anthem \n감각적이야 Sixth sense 반전\n짜릿해 손만 잡아도 감전\n너를 만나기 전까지 내 세상은 암전\n나란 무대 위에 너는 Spotlight \n너란 한강 위에 나는 남산\n더 완벽할 순 없잖아\n어두운 밤하늘 끝에 Twilight\nI could feel it\n너란 공간에 갇혀버렸어 You’re my Matrix\nYou don’t know I want your love (know I want your love)\n이 밤이 끝나기 전에 Baby\n\nYou know we got that vibe baby (해 뜰 때까지)\nLook at me, look at me, 느낌이 나지\nLook at me, look at me, 느낌이 나지\nYou know we got that vibe baby (해 질 때까지)\nLook at you, look at you, 느낌이 나지\n느낌이 와 It’s a vibe\n\nLook at the stars\n밝게 빛나는 달\nAll through the night\n우릴 비춰주고 있잖아\n\n날 보는 너의 눈빛과 \n진동을 계속 느끼고 싶어\n(You gotta know you got that vibe)\n\nYou know we got that vibe baby (해 뜰 때까지)\nLook at me, look at me, 느낌이 나지 \nYou know we got that vibe baby (해 질 때까지)\nLook at you, look at you, 느낌이 나지\n느낌이 와 It’s a vibe\n\n\nMore about TAEYANG @\nhttps://www.instagram.com/__youngbae__/\nhttps://www.facebook.com/TAEYANG\nhttps://twitter.com/Realtaeyang\nhttps://youtube.com/@TAEYANG_Official\nhttps://www.tiktok.com/@taeyang\n\n#VIBE #바이브\n#TAEYANG #태양 #Jimin #지민\n#THEBLACKLABEL #더블랙레이블",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/cXCBiF67jLM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/cXCBiF67jLM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/cXCBiF67jLM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/cXCBiF67jLM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/cXCBiF67jLM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "THEBLACKLABEL",
+                "tags": [
+                    "TAEYANG",
+                    "SOL",
+                    "BIGBANG",
+                    "PRAYER",
+                    "SOLARL",
+                    "태양",
+                    "빅뱅",
+                    "VIBE",
+                    "바이브",
+                    "지민",
+                    "Jimin",
+                    "JIMIN",
+                    "BTS",
+                    "방탄소년단",
+                    "박지민",
+                    "봄여름가을겨울",
+                    "달링",
+                    "눈코입",
+                    "DARLING",
+                    "WAKE ME UP",
+                    "새벽 1시",
+                    "1AM",
+                    "RINGA LINGA",
+                    "링가 링가",
+                    "나만 바라봐",
+                    "ONLY LOOK AT ME",
+                    "I'LL BE THERE",
+                    "웨딩드레스",
+                    "I NEED A GIRL",
+                    "WHERE U AT",
+                    "comback",
+                    "teaser",
+                    "KPOP",
+                    "K-POP",
+                    "POP",
+                    "더블랙레이블",
+                    "TEHBLACKLABEL",
+                    "theblacklabel",
+                    "blackpink",
+                    "yg entertainment",
+                    "YG",
+                    "single",
+                    "sm entertainment",
+                    "jyp entertainment",
+                    "bts",
+                    "big hit entertainment"
+                ],
+                "categoryId": "10",
+                "liveBroadcastContent": "none",
+                "localized": {
+                    "title": "TAEYANG - 'VIBE (feat. Jimin of BTS)' M/V",
+                    "description": "https://taeyang.lnk.to/VIBE\n\nTAEYANG - 'VIBE (feat. Jimin of BTS)' M/V\n\n말론 표현할 수 없지만\nGirl, You gotta know you got that vibe\n네 미소는 Fine Art\n내 영혼을 깨워\nYou got me feelin’ so right yeah \nIt’s a vibe \n\nYeah eh\nThis gon’ be the one and only theme song\n너에게만 고정된 내 시선\n내겐 너란 하나뿐인 Mission\n불가능은 없어 Baby lights camera action\n나란 음악 위에 너는 Topline \n너란 도시 위에 나는 Skyline \n넌 내 영화 속에 Highlight \n어두운 밤하늘 끝에 Twilight\nJust gets better\n너를 처음부터 정주행하고 싶은 매력 \nYou don’t know I want your love (know I want your love)\n이 밤이 끝나기 전에 Baby\n\nYou know we got that vibe baby (해 뜰 때까지)\nLook at me, look at me, 느낌이 나지\nLook at me, look at me, 느낌이 나지\nYou know we got that vibe baby (해 질 때까지)\nLook at you, look at you, 느낌이 나지 \n느낌이 와 It’s a vibe\n\nThis gon’ be the one and only Anthem \n감각적이야 Sixth sense 반전\n짜릿해 손만 잡아도 감전\n너를 만나기 전까지 내 세상은 암전\n나란 무대 위에 너는 Spotlight \n너란 한강 위에 나는 남산\n더 완벽할 순 없잖아\n어두운 밤하늘 끝에 Twilight\nI could feel it\n너란 공간에 갇혀버렸어 You’re my Matrix\nYou don’t know I want your love (know I want your love)\n이 밤이 끝나기 전에 Baby\n\nYou know we got that vibe baby (해 뜰 때까지)\nLook at me, look at me, 느낌이 나지\nLook at me, look at me, 느낌이 나지\nYou know we got that vibe baby (해 질 때까지)\nLook at you, look at you, 느낌이 나지\n느낌이 와 It’s a vibe\n\nLook at the stars\n밝게 빛나는 달\nAll through the night\n우릴 비춰주고 있잖아\n\n날 보는 너의 눈빛과 \n진동을 계속 느끼고 싶어\n(You gotta know you got that vibe)\n\nYou know we got that vibe baby (해 뜰 때까지)\nLook at me, look at me, 느낌이 나지 \nYou know we got that vibe baby (해 질 때까지)\nLook at you, look at you, 느낌이 나지\n느낌이 와 It’s a vibe\n\n\nMore about TAEYANG @\nhttps://www.instagram.com/__youngbae__/\nhttps://www.facebook.com/TAEYANG\nhttps://twitter.com/Realtaeyang\nhttps://youtube.com/@TAEYANG_Official\nhttps://www.tiktok.com/@taeyang\n\n#VIBE #바이브\n#TAEYANG #태양 #Jimin #지민\n#THEBLACKLABEL #더블랙레이블"
+                },
+                "defaultAudioLanguage": "ko"
+            },
+            "contentDetails": {
+                "duration": "PT2M59S",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+            },
+            "statistics": {
+                "viewCount": "39889970",
+                "favoriteCount": "0",
+                "commentCount": "239772"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}
