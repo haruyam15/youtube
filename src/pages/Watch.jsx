@@ -4,9 +4,8 @@ import { useQuery } from '@tanstack/react-query';
 
 export default function Watch() {
     const {videoId} = useParams();
-    
     const {isLoading, error, data} = useQuery(['video'], async ()=>{
-        return fetch(`/data/video_${videoId}.json`).then((res) => res.json());
+        return fetch(`../data/video_${videoId}.json`).then((res) => res.json());
     })
 
 
@@ -20,6 +19,7 @@ export default function Watch() {
     return(
         <div>
             <iframe  src={`https://www.youtube.com/embed/${videoId}`} title={snippet.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
         </div>
     )
 }

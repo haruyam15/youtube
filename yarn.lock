@@ -2436,6 +2436,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/line-clamp@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "@tailwindcss/line-clamp@npm:0.4.2"
+  peerDependencies:
+    tailwindcss: ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+  checksum: 26b8135df24fff51c3d3790ae795bdc12bc4a7113fa22dcab80568ae6ee00710e2ed4154048958c472bb654061f0f1573b7ac5e004ae6222cbd5ac6fcf199478
+  languageName: node
+  linkType: hard
+
 "@tanstack/query-core@npm:4.22.0":
   version: 4.22.0
   resolution: "@tanstack/query-core@npm:4.22.0"
@@ -10602,6 +10611,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-icons@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "react-icons@npm:4.7.1"
+  peerDependencies:
+    react: "*"
+  checksum: ed3cbdc5fc0c4d7d2debf78fdc8c4c80aeacf85a506a9a3c11b1d5922de393ac0a6542012b7fb81761e9280c54d0f26827d50a92b54ec8f0c8e52364d89970b5
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -11911,7 +11929,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^3.0.2":
+"tailwindcss@npm:^3.0.2, tailwindcss@npm:^3.2.4":
   version: 3.2.4
   resolution: "tailwindcss@npm:3.2.4"
   dependencies:
@@ -13165,6 +13183,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "youtube@workspace:."
   dependencies:
+    "@tailwindcss/line-clamp": ^0.4.2
     "@tanstack/react-query": ^4.22.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
@@ -13173,9 +13192,11 @@ __metadata:
     moment: ^2.29.4
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-icons: ^4.7.1
     react-query: ^3.39.2
     react-router-dom: ^6.6.2
     react-scripts: 5.0.1
+    tailwindcss: ^3.2.4
     web-vitals: ^2.1.0
   languageName: unknown
   linkType: soft

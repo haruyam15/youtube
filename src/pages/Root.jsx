@@ -3,9 +3,11 @@ import Navbar from './Navbar';
 
 export default function Root() {
     return (
-        <div>
+        <>
             <Navbar />
-            <Outlet />
-        </div>
+            <div className="content pt-[66px]">
+              <Outlet />
+            </div>
+        </>
     );
 }

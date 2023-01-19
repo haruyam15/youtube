@@ -1,0 +1,105 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "cpgqz_zyOC4A3rsMxmPkzFQsI64",
+    "items": [
+        {
+            "kind": "youtube#video",
+            "etag": "kCGn9xvoy-o1HvaaA3avqSmaD0A",
+            "id": "likYKQXBLbw",
+            "snippet": {
+                "publishedAt": "2023-01-16T09:00:30Z",
+                "channelId": "UCEf_Bc-KVd7onSeifS3py9g",
+                "title": "GOT the beat 갓 더 비트 'Stamp On It' MV",
+                "description": "GOT the beat's 1st Mini Album \"Stamp On It\" is out!\nListen and download on your favorite platform: https://GOTthebeat.lnk.to/StampOnIt\n\n[Tracklist]\n01 Stamp On It\n02 Goddess Level\n03 Alter Ego\n04 가시 (Rose)\n05 Outlaw\n06 MALA\n\nGOT the beat Official\nhttps://www.youtube.com/GOT_smtown\nhttps://www.facebook.com/GirlsOnTop.SM\nhttps://www.instagram.com/girlsontop_sm\nhttps://twitter.com/GirlsOnTop_SM\nhttps://www.tiktok.com/@girlsontop_sm\n\n#GOT_the_beat #갓더비트 #StampOnIt\n#GOT_StampOnIt #GirlsOnTop #GOT #걸스온탑\nGOT the beat 갓 더 비트 'Stamp On It' MV ℗ SM Entertainment",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/likYKQXBLbw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/likYKQXBLbw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/likYKQXBLbw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/likYKQXBLbw/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/likYKQXBLbw/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "SMTOWN",
+                "tags": [
+                    "갓더비트",
+                    "갓 더 비트",
+                    "got",
+                    "girls on top",
+                    "got the beat",
+                    "stamp on it",
+                    "스탬프 온 잇",
+                    "보아",
+                    "태연",
+                    "효연",
+                    "소녀시대",
+                    "슬기",
+                    "웬디",
+                    "레드벨벳",
+                    "에스파",
+                    "카리나",
+                    "윈터",
+                    "boa",
+                    "taeyeon",
+                    "hyoyeon",
+                    "girls' generation",
+                    "seulgi",
+                    "wendy",
+                    "red velvet",
+                    "aespa",
+                    "karina",
+                    "winter",
+                    "mv",
+                    "music video",
+                    "teaser",
+                    "걸스온탑",
+                    "걸스 온 탑"
+                ],
+                "categoryId": "10",
+                "liveBroadcastContent": "none",
+                "localized": {
+                    "title": "GOT the beat 갓 더 비트 'Stamp On It' MV",
+                    "description": "GOT the beat's 1st Mini Album \"Stamp On It\" is out!\nListen and download on your favorite platform: https://GOTthebeat.lnk.to/StampOnIt\n\n[Tracklist]\n01 Stamp On It\n02 Goddess Level\n03 Alter Ego\n04 가시 (Rose)\n05 Outlaw\n06 MALA\n\nGOT the beat Official\nhttps://www.youtube.com/GOT_smtown\nhttps://www.facebook.com/GirlsOnTop.SM\nhttps://www.instagram.com/girlsontop_sm\nhttps://twitter.com/GirlsOnTop_SM\nhttps://www.tiktok.com/@girlsontop_sm\n\n#GOT_the_beat #갓더비트 #StampOnIt\n#GOT_StampOnIt #GirlsOnTop #GOT #걸스온탑\nGOT the beat 갓 더 비트 'Stamp On It' MV ℗ SM Entertainment"
+                },
+                "defaultAudioLanguage": "ko"
+            },
+            "contentDetails": {
+                "duration": "PT4M",
+                "dimension": "2d",
+                "definition": "hd",
+                "caption": "true",
+                "licensedContent": true,
+                "contentRating": {},
+                "projection": "rectangular"
+            },
+            "statistics": {
+                "viewCount": "2362252",
+                "likeCount": "334263",
+                "favoriteCount": "0",
+                "commentCount": "14465"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 1
+    }
+}
