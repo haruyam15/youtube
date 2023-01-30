@@ -11,10 +11,9 @@ export default function Home() {
     if(isLoading){
         return <p>Loading...</p>
     }
-    const items = data.items;
     return (
         <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-5 md:px-7 lg:px-10 md:mt-3">
-            {items.map((item)=>{
+            {data.items.map((item)=>{
                 return (
                     <Link className="block" key={item.id} to={`/watch/${item.id}`}><Video data={item} /></Link>
                 )
