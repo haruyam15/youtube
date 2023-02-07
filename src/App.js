@@ -5,6 +5,7 @@ import Root from './pages/Root';
 import NotFound from './pages/NotFound';
 import Watch from './pages/Watch';
 import Home from './pages/Home';
+import Result from './pages/Result';
 
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: '/watch/:videoId',
         element: <Watch />,
+      },
+      {
+        path: '/result/:searchKeywordParam',
+        element: <Result />,
       }
     ]
   },
