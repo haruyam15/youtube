@@ -14,8 +14,20 @@ export default function Watch() {
     },[])
 
     const {videoId} = useParams();
+
+    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
+
     const {isLoading, error, data} = useQuery(['video', videoId], async ()=>{
-        return fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=${videoId}&key=AIzaSyDIbyUMiFZkfW9_SL-8EkOnZkfHsqHyWSE`).then((res) => res.json());
+        const url = new URL("youtube/v3/videos", REDIRECT_SERVER_HOST);
+        const params = {
+            id : videoId,
+            part : 'snippet, contentDetails, statistics'
+        }
+        url.search = new URLSearchParams(params).toString();
+
+        return fetch(url).then((res) => res.json());
+    },{
+        staleTime: 1000 * 60 * 60 * 24,
     })
 
 
@@ -31,7 +43,7 @@ export default function Watch() {
     const {title, channelId} = data.items[0].snippet;
 
     return(
-        <div className="flex flex-col lg:flex-row md:p-5">
+        <div className="flex flex-col lg:flex-row md:p-5 md:pt-0">
             <div className="lg:w-[70%]">
                 <iframe className="w-full aspect-video" src={`https://www.youtube.com/embed/${videoId}`} title={title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 

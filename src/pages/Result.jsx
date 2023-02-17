@@ -2,13 +2,24 @@ import { Link, useParams } from "react-router-dom";
 import { useQuery } from '@tanstack/react-query';
 import Video from "../components/Video";
 import Channel from "../components/Channel";
-import { useEffect } from "react";
 
 export default function Result() {
     const {searchKeywordParam} = useParams();
-    const {isLoading, error, data} = useQuery(['search'], async ()=>{
-        return fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${searchKeywordParam}&key=AIzaSyDIbyUMiFZkfW9_SL-8EkOnZkfHsqHyWSE
-        `).then((res) => res.json());
+    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
+
+    const {isLoading, error, data} = useQuery(['search', searchKeywordParam], async ()=>{
+
+        const url = new URL("youtube/v3/search", REDIRECT_SERVER_HOST);
+        const params = {
+            part : 'snippet',
+            maxResults : '25',
+            q : searchKeywordParam
+        }
+        url.search = new URLSearchParams(params).toString();
+
+        return fetch(url).then((res) => res.json());
+    },{
+        staleTime: 1000 * 60 * 60 * 24,
     })
 
     if(isLoading){

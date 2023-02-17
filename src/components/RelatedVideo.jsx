@@ -7,9 +7,21 @@ export default function RelatedVideo({videoId}) {
     const handleClick = ()=> {
         window.scrollTo({top:0,behavior:'smooth'})
     }
+    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
 
     const {isLoading, error, data} = useQuery(['relatedVideo', videoId], async ()=>{
-        return fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId=${videoId}&type=video&maxResults=25&key=AIzaSyDIbyUMiFZkfW9_SL-8EkOnZkfHsqHyWSE`).then((res) => res.json());
+        const url = new URL("youtube/v3/search", REDIRECT_SERVER_HOST);
+        const params = {
+            part : 'snippet',
+            relatedToVideoId : videoId,
+            type : 'video',
+            maxResults : '25'
+        }
+        url.search = new URLSearchParams(params).toString();
+
+        return fetch(url).then((res) => res.json());
+    },{
+        staleTime: 1000 * 60 * 60 * 24,
     });
 
 

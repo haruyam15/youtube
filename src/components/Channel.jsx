@@ -3,8 +3,19 @@ import * as common from '../CommonFunction';
 
 export default function Channel({channelId}) {
 
+    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
+
     const {isLoading, error, data} = useQuery(['channel', channelId], async ()=>{
-        return fetch(`https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2Cstatistics&id=${channelId}&key=AIzaSyDIbyUMiFZkfW9_SL-8EkOnZkfHsqHyWSE`).then((res) => res.json());
+        const url = new URL("youtube/v3/channels", REDIRECT_SERVER_HOST);
+        const params = {
+            part : 'snippet, statistics',
+            id : channelId
+        }
+        url.search = new URLSearchParams(params).toString();
+
+        return fetch(url).then((res) => res.json());
+    },{
+        staleTime: 1000 * 60 * 60 * 24,
     })
 
 

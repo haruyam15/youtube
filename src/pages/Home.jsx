@@ -3,9 +3,20 @@ import Video from "../components/Video";
 import { useQuery } from '@tanstack/react-query';
 
 export default function Home() {
-    
+
+    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
     const {isLoading, error, data} = useQuery(['mostPopular'], async ()=>{
-        return fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2Cstatistics&chart=mostPopular&maxResults=25&regionCode=kr&key=AIzaSyDIbyUMiFZkfW9_SL-8EkOnZkfHsqHyWSE`).then((res) => res.json());
+        const url = new URL("youtube/v3/videos", REDIRECT_SERVER_HOST);
+        const parameters = new URLSearchParams({
+            part : 'snippet, statistics',
+            chart : 'mostPopular',
+            maxResults : '25',
+            regionCode : 'Kr',
+        });
+        url.search = parameters.toString();
+        return fetch(url).then((res) => res.json());
+    },{
+        staleTime: 1000 * 60 * 60 * 24,
     })
 
     if(isLoading){
