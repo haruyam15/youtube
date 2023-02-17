@@ -38,7 +38,7 @@ export default function Navbar() {
            
            <div className="flex w-1/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <input className="flex-1 border border-[#ccc] rounded-tl-[40px] rounded-bl-[40px] px-3 py-2 text-sm" type="text" placeholder="검색" value={searchKeyword} onChange={handleChange} onKeyDown={handleKeyDown} />
-                <p className="w-[64px] flex justify-center items-center px-3 ty-2 border border-l-0 border-[#ccc] rounded-tr-[40px] rounded-br-[40px] bg-[#f8f8f8]" onClick={handleClickSearch}>
+                <p className="w-[64px] flex justify-center items-center px-3 ty-2 border border-l-0 border-[#ccc] rounded-tr-[40px] rounded-br-[40px] bg-[#f8f8f8] cursor-pointer" onClick={handleClickSearch}>
                     <IoSearchOutline/>
                 </p>
            </div>
