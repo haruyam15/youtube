@@ -25,7 +25,7 @@ export default function Navbar() {
     }
 
     const handleClickSearch = () => {
-        if(searchKeyword.length == 0){
+        if(!searchKeyword.length == 0){
             navigate(`/result/${searchKeyword}`);
             return;
         }
