@@ -23,7 +23,7 @@ export default function Result() {
     })
 
     if(isLoading){
-        return <p>Loading...</p>
+        return <div></div>
     }
     
     return (
@@ -36,7 +36,9 @@ export default function Result() {
                     
                 }else if(item.id.kind === "youtube#channel")
                     return (
-                        <Channel channelId={item.id.channelId} key={item.id.channelId} />
+                        <div className="md:col-span-3 lg:col-span-5 min-h-[70px] border-y border-gray-200 py-3">
+                            <Channel channelId={item.id.channelId} key={item.id.channelId} />
+                        </div>
                     )
             })}
         </div>

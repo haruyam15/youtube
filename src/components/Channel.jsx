@@ -20,7 +20,7 @@ export default function Channel({channelId}) {
 
 
     if(isLoading){
-        return <p>Loading...</p>
+        return <div></div>
     }
 
     const {title, thumbnails} = data.items[0].snippet;

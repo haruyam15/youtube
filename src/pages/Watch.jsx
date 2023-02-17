@@ -32,7 +32,7 @@ export default function Watch() {
 
 
     if(isLoading){
-        return <p>Loading...</p>
+        return <div></div>
     }
 
     if(error){

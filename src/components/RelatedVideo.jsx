@@ -26,11 +26,7 @@ export default function RelatedVideo({videoId}) {
 
 
     if(isLoading){
-        return <p>Loading...</p>
-    };
-
-    if(error){
-
+        return <div></div>
     }
 
     return(
