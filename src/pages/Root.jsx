@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import LoadingProvider from '../context/LoadingContext';
-import Navbar from './Navbar';
+import Navbar from '../components/Navbar';
 
 export default function Root() {
     return (
