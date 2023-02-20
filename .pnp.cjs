@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:09507e6e87da10627c0db571c93192a0dbc8d40e464c1626d9ef9c1dc244aa85d15ade60d2c4bf3ad0864b39a58c0be3c7940380d2bd3c4593b5ca1049b254d3#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:09507e6e87da10627c0db571c93192a0dbc8d40e464c1626d9ef9c1dc244aa85d15ade60d2c4bf3ad0864b39a58c0be3c7940380d2bd3c4593b5ca1049b254d3#npm:13.5.0"],\
-            ["axios", "npm:1.3.2"],\
+            ["axios", "npm:1.3.3"],\
             ["cors", "npm:2.8.5"],\
             ["dotenv", "npm:16.0.3"],\
             ["eslint-config-react-app", "virtual:09507e6e87da10627c0db571c93192a0dbc8d40e464c1626d9ef9c1dc244aa85d15ade60d2c4bf3ad0864b39a58c0be3c7940380d2bd3c4593b5ca1049b254d3#npm:7.0.1"],\
@@ -5904,11 +5904,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["axios", [\
-        ["npm:1.3.2", {\
-          "packageLocation": "./.yarn/cache/axios-npm-1.3.2-e60543899f-9791af75a6.zip/node_modules/axios/",\
+        ["npm:1.3.3", {\
+          "packageLocation": "./.yarn/cache/axios-npm-1.3.3-27e5c9cf4a-b734a4bc34.zip/node_modules/axios/",\
           "packageDependencies": [\
-            ["axios", "npm:1.3.2"],\
-            ["follow-redirects", "virtual:e60543899fd705bd5f850d61bc1194b1bf7a80a922cb114420112d5561895397647171575ef119a8decf292183f1806d99bf972caa13adcdef0a1056caa42cb3#npm:1.15.2"],\
+            ["axios", "npm:1.3.3"],\
+            ["follow-redirects", "virtual:27e5c9cf4a1b0155cef3e157b25832c057366a49115c0bfab0d556e005e9b6fb0b16700823e1a19f2997e96b96e2b2c39f7045240cc1b6c0550303f4158171e3#npm:1.15.2"],\
             ["form-data", "npm:4.0.0"],\
             ["proxy-from-env", "npm:1.1.0"]\
           ],\
@@ -9171,10 +9171,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:e60543899fd705bd5f850d61bc1194b1bf7a80a922cb114420112d5561895397647171575ef119a8decf292183f1806d99bf972caa13adcdef0a1056caa42cb3#npm:1.15.2", {\
-          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-7a7a9ff787/0/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
+        ["virtual:27e5c9cf4a1b0155cef3e157b25832c057366a49115c0bfab0d556e005e9b6fb0b16700823e1a19f2997e96b96e2b2c39f7045240cc1b6c0550303f4158171e3#npm:1.15.2", {\
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-2bdf8afc63/0/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
           "packageDependencies": [\
-            ["follow-redirects", "virtual:e60543899fd705bd5f850d61bc1194b1bf7a80a922cb114420112d5561895397647171575ef119a8decf292183f1806d99bf972caa13adcdef0a1056caa42cb3#npm:1.15.2"],\
+            ["follow-redirects", "virtual:27e5c9cf4a1b0155cef3e157b25832c057366a49115c0bfab0d556e005e9b6fb0b16700823e1a19f2997e96b96e2b2c39f7045240cc1b6c0550303f4158171e3#npm:1.15.2"],\
             ["@types/debug", null],\
             ["debug", null]\
           ],\
@@ -9897,7 +9897,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["http-proxy", "npm:1.18.1"],\
             ["eventemitter3", "npm:4.0.7"],\
-            ["follow-redirects", "virtual:e60543899fd705bd5f850d61bc1194b1bf7a80a922cb114420112d5561895397647171575ef119a8decf292183f1806d99bf972caa13adcdef0a1056caa42cb3#npm:1.15.2"],\
+            ["follow-redirects", "virtual:27e5c9cf4a1b0155cef3e157b25832c057366a49115c0bfab0d556e005e9b6fb0b16700823e1a19f2997e96b96e2b2c39f7045240cc1b6c0550303f4158171e3#npm:1.15.2"],\
             ["requires-port", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
@@ -18112,7 +18112,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:09507e6e87da10627c0db571c93192a0dbc8d40e464c1626d9ef9c1dc244aa85d15ade60d2c4bf3ad0864b39a58c0be3c7940380d2bd3c4593b5ca1049b254d3#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:09507e6e87da10627c0db571c93192a0dbc8d40e464c1626d9ef9c1dc244aa85d15ade60d2c4bf3ad0864b39a58c0be3c7940380d2bd3c4593b5ca1049b254d3#npm:13.5.0"],\
-            ["axios", "npm:1.3.2"],\
+            ["axios", "npm:1.3.3"],\
             ["cors", "npm:2.8.5"],\
             ["dotenv", "npm:16.0.3"],\
             ["eslint-config-react-app", "virtual:09507e6e87da10627c0db571c93192a0dbc8d40e464c1626d9ef9c1dc244aa85d15ade60d2c4bf3ad0864b39a58c0be3c7940380d2bd3c4593b5ca1049b254d3#npm:7.0.1"],\

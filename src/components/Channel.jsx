@@ -1,20 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import * as common from '../CommonFunction';
+import { useYoutubeApi } from '../context/YoutubeApiContext';
 
-export default function Channel({channelId}) {
-
-    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
-
-    const {isLoading, error, data} = useQuery(['channel', channelId], async ()=>{
-        const url = new URL("youtube/v3/channels", REDIRECT_SERVER_HOST);
-        const params = {
-            part : 'snippet, statistics',
-            id : channelId
-        }
-        url.search = new URLSearchParams(params).toString();
-
-        return fetch(url).then((res) => res.json());
-    },{
+export default function Channel({channelId}) {  
+    const {youtube} = useYoutubeApi();
+    const {isLoading, error, data} = useQuery(['channel', channelId], () => youtube.channel(channelId), {
         staleTime: 1000 * 60 * 60 * 24,
     })
 
@@ -23,8 +13,8 @@ export default function Channel({channelId}) {
         return <div></div>
     }
 
-    const {title, thumbnails} = data.items[0].snippet;
-    const {subscriberCount} = data.items[0].statistics;
+    const {title, thumbnails} = data.snippet;
+    const {subscriberCount} = data.statistics;
 
 
     return(

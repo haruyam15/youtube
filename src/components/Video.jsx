@@ -11,7 +11,7 @@ export default function Video({data}) {
                 </div>
             </div>
 
-            <Detail data={data} />
+            <Detail item={data} />
         </>
     )
 }

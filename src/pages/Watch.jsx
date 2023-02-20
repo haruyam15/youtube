@@ -5,9 +5,11 @@ import Description from "../components/Description";
 import RelatedVideo from "../components/RelatedVideo";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useYoutubeApi } from "../context/YoutubeApiContext";
 
 export default function Watch() {
     const navigate = useNavigate();
+    const {youtube} = useYoutubeApi();
     
     useEffect(() => {
         window.scrollTo({top:0,behavior:'smooth'})
@@ -15,18 +17,7 @@ export default function Watch() {
 
     const {videoId} = useParams();
 
-    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
-
-    const {isLoading, error, data} = useQuery(['video', videoId], async ()=>{
-        const url = new URL("youtube/v3/videos", REDIRECT_SERVER_HOST);
-        const params = {
-            id : videoId,
-            part : 'snippet, contentDetails, statistics'
-        }
-        url.search = new URLSearchParams(params).toString();
-
-        return fetch(url).then((res) => res.json());
-    },{
+    const {isLoading, error, data} = useQuery(['watch', videoId], ()=> youtube.videos(videoId), {
         staleTime: 1000 * 60 * 60 * 24,
     })
 
@@ -40,7 +31,7 @@ export default function Watch() {
         navigate(`/`);
     }
 
-    const {title, channelId} = data.items[0].snippet;
+    const {title, channelId} = data.snippet;
 
     return(
         <div className="flex flex-col lg:flex-row md:p-5 md:pt-0">

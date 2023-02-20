@@ -1,26 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link } from "react-router-dom";
 import moment from 'moment';
+import { useYoutubeApi } from '../context/YoutubeApiContext';
 
 export default function RelatedVideo({videoId}) {
-
+    const {youtube} = useYoutubeApi();
     const handleClick = ()=> {
         window.scrollTo({top:0,behavior:'smooth'})
     }
-    const REDIRECT_SERVER_HOST = "https://lustrous-muffin-d99aaa.netlify.app"; 
-
-    const {isLoading, error, data} = useQuery(['relatedVideo', videoId], async ()=>{
-        const url = new URL("youtube/v3/search", REDIRECT_SERVER_HOST);
-        const params = {
-            part : 'snippet',
-            relatedToVideoId : videoId,
-            type : 'video',
-            maxResults : '25'
-        }
-        url.search = new URLSearchParams(params).toString();
-
-        return fetch(url).then((res) => res.json());
-    },{
+    const {isLoading, error, data} = useQuery(['relatedVideo', videoId], ()=> youtube.search({videoId}) ,{
         staleTime: 1000 * 60 * 60 * 24,
     });
 
@@ -31,7 +19,7 @@ export default function RelatedVideo({videoId}) {
 
     return(
         <>
-            {data.items.map((item)=>{
+            {data.map((item)=>{
                 const {title, channelTitle, thumbnails, publishedAt} = item.snippet;
                 return (
                     <Link to={`/watch/${item.id.videoId}`} key={item.id.videoId} onClick={handleClick}>

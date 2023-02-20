@@ -6,8 +6,8 @@ import * as common from '../CommonFunction';
 
 export default function Description({data}) {
     const [readMore, setReadMore] = useState(false)
-    const snippet = data.items[0].snippet;
-    const statistics = data.items[0].statistics;
+    const snippet = data.snippet;
+    const statistics = data.statistics;
 
     const toggleReadMore = ()=>{
         setReadMore((prev)=>!prev);
@@ -19,7 +19,8 @@ export default function Description({data}) {
             <p className={readMore ? `whitespace-pre-wrap `: `whitespace-pre-wrap line-clamp-3`}>
                 {snippet.description}
             </p>
-            <p className="pl-1">{readMore ? '간략히' : '더보기'}</p>
+            {snippet.description.length !== 0 ? <p className="pl-1">{readMore ? '간략히' : '더보기'}</p> : ''}
+            
         </div>
     )
 }

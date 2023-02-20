@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import Watch from './pages/Watch';
 import Home from './pages/Home';
 import Result from './pages/Result';
+import { YoutubeApiProvider } from './context/YoutubeApiContext';
 
 const queryClient = new QueryClient()
 const router = createBrowserRouter([
@@ -33,11 +34,13 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-        <RouterProvider router={router} />
+    <YoutubeApiProvider>
+      <QueryClientProvider client={queryClient}>
+          <RouterProvider router={router} />
 
-        <ReactQueryDevtools initialIsOpen={true} />
-    </QueryClientProvider>
+          <ReactQueryDevtools initialIsOpen={true} />
+      </QueryClientProvider>
+    </YoutubeApiProvider>
   )
 }
 
