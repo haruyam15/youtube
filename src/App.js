@@ -1,44 +1,25 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import Root from './pages/Root';
-import NotFound from './pages/NotFound';
-import Watch from './pages/Watch';
-import Home from './pages/Home';
-import Result from './pages/Result';
 import { YoutubeApiProvider } from './context/YoutubeApiContext';
+import { Outlet } from 'react-router-dom';
+import LoadingProvider from './context/LoadingContext';
+import Navbar from './components/Navbar';
 
 const queryClient = new QueryClient()
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Root />,
-    errorElement: <NotFound />,
-    children:[
-      {
-        index:true,
-        element: <Home />
-      },
-      {
-        path: '/watch/:videoId',
-        element: <Watch />,
-      },
-      {
-        path: '/result/:searchKeywordParam',
-        element: <Result />,
-      }
-    ]
-  },
-]);
+
 
 function App() {
   return (
     <YoutubeApiProvider>
       <QueryClientProvider client={queryClient}>
-          <RouterProvider router={router} />
-
-          <ReactQueryDevtools initialIsOpen={true} />
+        <LoadingProvider>
+          <Navbar />
+          <div className="content pt-[66px]">
+            <Outlet />
+          </div>
+        </LoadingProvider>
+        <ReactQueryDevtools initialIsOpen={true} />
       </QueryClientProvider>
     </YoutubeApiProvider>
   )
