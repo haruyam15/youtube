@@ -22,7 +22,7 @@ export default function Navbar() {
     }
     const handleKeyDown = (e)=> {
         if(e.key === 'Enter'){
-            if(!e.target.value.length === 0){
+            if(e.target.value.length !== 0){
                 navigate(`/result/${e.target.value}`);
                 return;
             }
@@ -34,7 +34,7 @@ export default function Navbar() {
     }
 
     const handleClickSearch = () => {
-        if(!searchKeyword.length === 0){
+        if(searchKeyword.length !== 0){
             navigate(`/result/${searchKeyword}`);
             return;
         }
