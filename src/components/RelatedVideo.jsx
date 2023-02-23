@@ -8,7 +8,7 @@ export default function RelatedVideo({videoId}) {
     const handleClick = ()=> {
         window.scrollTo({top:0,behavior:'smooth'})
     }
-    const {isLoading, error, data} = useQuery(['relatedVideo', videoId], ()=> youtube.search({videoId}) ,{
+    const {isLoading, data} = useQuery(['relatedVideo', videoId], ()=> youtube.search({videoId}) ,{
         staleTime: 1000 * 60 * 60 * 24,
     });
 

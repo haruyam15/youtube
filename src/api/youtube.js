@@ -2,7 +2,7 @@ import axios from "axios";
 const baseURL = "https://lustrous-muffin-d99aaa.netlify.app/youtube/v3/"; 
 
 export default class Youtube{
-    constructor() {}
+    // constructor() {}
 
     async videos(videoId){
         return videoId ? this.#watch(videoId) : this.#mostPopular();

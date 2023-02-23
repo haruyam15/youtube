@@ -4,7 +4,7 @@ import { useYoutubeApi } from '../context/YoutubeApiContext';
 
 export default function Channel({channelId}) {  
     const {youtube} = useYoutubeApi();
-    const {isLoading, error, data} = useQuery(['channel', channelId], () => youtube.channel(channelId), {
+    const {isLoading, data} = useQuery(['channel', channelId], () => youtube.channel(channelId), {
         staleTime: 1000 * 60 * 60 * 24,
     })
 

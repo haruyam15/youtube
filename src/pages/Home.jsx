@@ -8,12 +8,12 @@ import { useYoutubeApi } from "../context/YoutubeApiContext";
 export default function Home() {
     const {setIsLoading} = useLoading();
     const {youtube} = useYoutubeApi();
-    const {isLoading, error, data} = useQuery(['mostPopular'], ()=> youtube.videos() , {staleTime: 1000 * 60 * 60 * 24,})
+    const {isLoading, data} = useQuery(['mostPopular'], ()=> youtube.videos() , {staleTime: 1000 * 60 * 60 * 24,})
 
     useEffect(() => {
         setIsLoading(isLoading);
         
-    }, [isLoading]);
+    }, [isLoading, setIsLoading]);
 
     if(isLoading){
         return <div></div>
