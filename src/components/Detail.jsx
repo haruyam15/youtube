@@ -2,7 +2,8 @@
 import moment from 'moment';
 import 'moment/locale/ko';
 import * as common from '../CommonFunction';
-export default function Detail({item}) {
+export default function Detail({item, type}) {
+    const isList = type === "list";
     const {title, channelTitle, publishedAt} = item.snippet;
     let viewCount = '';
 
@@ -11,7 +12,7 @@ export default function Detail({item}) {
     }
 
     return (
-        <dl className="flex flex-col mx-3 md:mx-0">
+        <dl className={`flex flex-col mx-3 ${!isList ? 'md:mx-0' : ''}`}>
             <dt className="line-clamp-2 text-md font-medium">{title}</dt>
             <dd className="text-[#606060] text-sm mt-2">{channelTitle}</dd>
             <dd className="text-[#606060] text-sm">{viewCount}{moment(publishedAt).fromNow()}</dd>
