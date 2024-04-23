@@ -51,9 +51,10 @@ export default function Watch() {
                 
             </div>
 
-            <ul className="p-3 pt-0 md:p-0 lg:w-[30%] lg:p-0 lg:pl-5">
+            {/* yotube api 변경이슈로 오류 수정중 */}
+            {/* <ul className="p-3 pt-0 md:p-0 lg:w-[30%] lg:p-0 lg:pl-5">
                 <RelatedVideo videoId={videoId}/>
-            </ul>
+            </ul> */}
 
         </div>
     )
